@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DoggoMatch — Dogs Dating</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">🐶 DoggoMatch</div>
+    <div class="controls">
+      <select id="currentDogSelect" title="Choose your profile"></select>
+      <button id="seedBtn" class="secondary">Load Demo Dogs</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel panel-form">
+      <h2>Create / Update Your Dog Profile</h2>
+      <form id="dogForm">
+        <div class="grid-2">
+          <label>Dog Name
+            <input required type="text" id="name" placeholder="e.g., Buddy" />
+          </label>
+          <label>Breed
+            <input required type="text" id="breed" placeholder="e.g., Labrador" />
+          </label>
+        </div>
+        <div class="grid-3">
+          <label>Age
+            <input type="number" id="age" min="0" placeholder="3" />
+          </label>
+          <label>Gender
+            <select id="gender">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Unknown</option>
+            </select>
+          </label>
+          <label>Photo URL
+            <input type="url" id="photo" placeholder="https://..." />
+          </label>
+        </div>
+        <label>Bio
+          <textarea id="bio" rows="3" placeholder="Playful, house-trained, loves long walks on the beach..."></textarea>
+        </label>
+        <button type="submit">Save Profile</button>
+      </form>
+      <p class="hint">After saving, select your profile from the top-right dropdown to start liking other dogs. Mutual likes become matches!</p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Browse Dogs</h2>
+        <input id="search" type="search" placeholder="Search by name or breed..." />
+      </div>
+      <div id="dogsGrid" class="grid-cards"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Your Matches</h2>
+      <div id="matches" class="matches"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p></p>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

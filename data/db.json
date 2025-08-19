@@ -1,0 +1,33 @@
+{
+  "dogs": [
+    {
+      "id": "ZK6iAs9h",
+      "name": "Tommy",
+      "breed": "Labrador",
+      "age": null,
+      "gender": "Male",
+      "bio": "Joyful",
+      "photo": "https://placehold.co/600x400?text=Tommy",
+      "createdAt": 1755614998240
+    },
+    {
+      "id": "WgZvIbyq",
+      "name": "Bob",
+      "breed": "Bull Dog",
+      "age": 4,
+      "gender": "Male",
+      "bio": "Dangerous",
+      "photo": "https://placehold.co/600x400?text=Bob",
+      "createdAt": 1755615094011
+    }
+  ],
+  "likes": [
+    {
+      "id": "ZhSHdMa0hF",
+      "fromId": "WgZvIbyq",
+      "toId": "ZK6iAs9h",
+      "createdAt": 1755615102428
+    }
+  ],
+  "matches": []
+}

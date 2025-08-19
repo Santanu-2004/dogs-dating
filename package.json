@@ -1,0 +1,24 @@
+{
+  "name": "dogs-dating",
+  "version": "1.0.0",
+  "description": "A simple full-stack Dogs Dating website using Node.js (Express) + HTML/CSS/JS.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "dogs",
+    "dating",
+    "express",
+    "vanilla-js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nanoid": "^5.0.7"
+  }
+}
